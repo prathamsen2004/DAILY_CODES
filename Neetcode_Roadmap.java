@@ -28,6 +28,9 @@ return false;
 
 An anagram is a string that contains the exact same characters as another string, but the order of the characters can be different. */
 
+
+/* 
+
 import java.util.*;
 public class Neetcode_Roadmap{
     public static boolean anagram(String s,String t){
@@ -49,5 +52,26 @@ public class Neetcode_Roadmap{
         String t = "carrace";
         boolean ans = anagram(s,t);
         System.out.println(ans);
+    }
+}
+
+*/
+
+import java.util.*;
+public class Neetcode_Roadmap{
+    public static void twosum(int nums[],int target){
+        for(int i=0;i<nums.length;i++){
+            for(int j=i+1;j<nums.length;j++){
+                if(nums[i]+nums[j]==target){
+                System.out.println(i + " "+j);
+                }
+            }
+        }
+    
+    }
+    public static void main(String args []){
+        int nums[]={1,2,3,4,5,6};
+        int target =10;
+        twosum(nums,target);
     }
 }
